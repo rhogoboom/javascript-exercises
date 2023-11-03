@@ -1,4 +1,13 @@
-const removeFromArray = function() {
+const removeFromArray = function(input, remove) {
+    const removes = [...arguments].slice(1);
+    returnArray = []
+
+    for (n of input) {
+        if (!removes.includes(n)) {
+            returnArray.push(n);
+        }
+    }
+    return returnArray
 
 };
 
